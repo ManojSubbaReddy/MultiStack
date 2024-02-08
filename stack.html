@@ -1,0 +1,244 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack</title>
+    <script src="stackjs.js"></script>
+    <link rel="stylesheet" href="stack.css">
+</head>
+<body>
+
+    <div class="header">
+        <div id="out"></div>
+  </div>
+
+  <div class="st">Stack1</div>
+  <div class="st2">Stack2</div>
+    
+<div class="stack1">
+    <form id="form" onsubmit="return false;" class="push11">
+        <input type="text" name="text" id="userInput" class="input" placeholder="Enter your Value">
+        <button class="btn" onclick="push1()"> Push1
+        </button>
+    </form>
+
+    <button class="buttonp2" onclick="pop1()" id="pop1">
+      <svg viewBox="0 0 448 512" class="svgIcon"><path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"></path></svg>
+    </button>
+    <button onclick="peek1()" id="peek1">peek1</button>
+    <button onclick="isEmpty1()" id="isEmpty1">is empty1</button>
+</div>
+    
+
+
+<div class="stack2">
+    <form id="form" onsubmit="return false;" class="push22">
+        <input class="input1" id="userInput1" placeholder="Enter Your Value">
+        <button class="btn" onclick="push2()" id="btnp2"> Push2
+        </button>
+    </form>
+
+    
+
+    <button class="buttonp" onclick="pop2()" id="pop">
+      <svg viewBox="0 0 448 512" class="svgIcon"><path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"></path></svg>
+    </button>
+    <button onclick="peek2()" id="peek">peek2</button>
+    <button onclick="isempty2()" id="isEmpty">is empty2</button>
+</div>
+    
+
+    <div class="stack"></div>
+
+    <div class="whole0">
+      
+        <div class="wrapper0">
+          <div id="out0"></div>
+            <img src="line-waves-light-colorful-wallpaper-preview.jpg" alt="minion">
+            <div id="left-door0" class="door0">
+              <div class="shape0"></div>
+              <div class="shape0"></div>
+              <div id="left-knob0" class="knob0"></div>
+            </div>
+            <div id="right-door0" class="door0">
+              <div class="shape0"></div>
+              <div class="shape0"></div>
+              <div id="right-knob0" class="knob0"></div>
+            </div>
+          </div>
+    </div>
+        
+    <div class="whole1">
+        <div class="wrapper1">
+          <div id="out1"></div>
+            <img src="line-waves-light-colorful-wallpaper-preview.jpg" alt="minion">
+          
+            <div id="left-door1" class="door1">
+              <div class="shape1"></div>
+              <div class="shape1"></div>
+              <div id="left-knob1" class="knob1"></div>
+            </div>
+            <div id="right-door1" class="door1">
+              <div class="shape1"></div>
+              <div class="shape1"></div>
+              <div id="right-knob1" class="knob1"></div>
+            </div>
+          </div>
+    </div>
+
+    <div class="whole2">
+        <div class="wrapper2">
+          <div id="out2"></div>
+            <img src="line-waves-light-colorful-wallpaper-preview.jpg" alt="minion">
+          
+            <div id="left-door2" class="door2">
+              <div class="shape2"></div>
+              <div class="shape2"></div>
+              <div id="left-knob2" class="knob2"></div>
+            </div>
+            <div id="right-door2" class="door2">
+              <div class="shape2"></div>
+              <div class="shape2"></div>
+              <div id="right-knob2" class="knob2"></div>
+            </div>
+          </div>
+    </div>
+
+    <div class="whole3">
+        <div class="wrapper3">
+          <div id="out3"></div>
+            <img src="line-waves-light-colorful-wallpaper-preview.jpg" alt="minion">
+         
+            <div id="left-door3" class="door3">
+              <div class="shape3"></div>
+              <div class="shape3"></div>
+              <div id="left-knob3" class="knob3"></div>
+            </div>
+            <div id="right-door3" class="door3">
+              <div class="shape3"></div>
+              <div class="shape3"></div>
+              <div id="right-knob3" class="knob3"></div>
+            </div>
+          </div>
+    </div>
+
+
+
+    <div class="whole4">
+      <div class="wrapper4">
+        <div id="out4"></div>
+          <img src="line-waves-light-colorful-wallpaper-preview.jpg" alt="minion">
+        
+          <div id="left-door4" class="door4">
+            <div class="shape4"></div>
+            <div class="shape4"></div>
+            <div id="left-knob4" class="knob4"></div>
+          </div>
+          <div id="right-door4" class="door4">
+            <div class="shape4"></div>
+            <div class="shape4"></div>
+            <div id="right-knob4" class="knob4"></div>
+          </div>
+        </div>
+  </div>
+
+<div class="whole5">
+  <div class="wrapper5">
+    <div id="out5"></div>
+      <img src="https://source.unsplash.com/mou0S7ViElQ" alt="minion">
+    
+      <div id="left-door5" class="door5">
+        <div class="shape5"></div>
+        <div class="shape5"></div>
+        <div id="left-knob5" class="knob5"></div>
+      </div>
+      <div id="right-door5" class="door5">
+        <div class="shape5"></div>
+        <div class="shape5"></div>
+        <div id="right-knob5" class="knob5"></div>
+      </div>
+    </div>
+  </div>
+ 
+
+<div class="whole6">
+  <div class="wrapper6">
+    <div id="out6"></div>
+      <img src="https://source.unsplash.com/mou0S7ViElQ" alt="minion">
+   
+      <div id="left-door6" class="door6">
+        <div class="shape6"></div>
+        <div class="shape6"></div>
+        <div id="left-knob6" class="knob6"></div>
+      </div>
+      <div id="right-door6" class="door6">
+        <div class="shape6"></div>
+        <div class="shape6"></div>
+        <div id="right-knob6" class="knob6"></div>
+      </div>
+    </div>
+  </div>
+
+<div class="whole7">
+  <div class="wrapper7">
+    <div id="out7"></div>
+      <img src="https://source.unsplash.com/mou0S7ViElQ" alt="minion">
+    
+      <div id="left-door7" class="door7">
+        <div class="shape7"></div>
+        <div class="shape7"></div>
+        <div id="left-knob7" class="knob7"></div>
+      </div>
+      <div id="right-door7" class="door7">
+        <div class="shape7"></div>
+        <div class="shape7"></div>
+        <div id="right-knob7" class="knob7"></div>
+      </div>
+    </div>
+  </div>
+
+<div class="whole8">
+  <div class="wrapper8">
+  <div id="out8"></div>
+      <img src="https://source.unsplash.com/mou0S7ViElQ" alt="minion">
+   
+      <div id="left-door8" class="door8">
+        <div class="shape8"></div>
+        <div class="shape8"></div>
+        <div id="left-knob8" class="knob8"></div>
+      </div>
+      <div id="right-door8" class="door8">
+        <div class="shape8"></div>
+        <div class="shape8"></div>
+        <div id="right-knob8" class="knob8"></div>
+      </div>
+    </div>
+  </div>
+
+<div class="whole9">
+  <div class="wrapper9">
+    <div id="out9"></div>
+      <img src="https://source.unsplash.com/mou0S7ViElQ" alt="minion">
+      <div id="left-door9" class="door9">
+        <div class="shape9"></div>
+        <div class="shape9"></div>
+        <div id="left-knob9" class="knob9"></div>
+      </div>
+      <div id="right-door9" class="door9">
+        <div class="shape9"></div>
+        <div class="shape9"></div>
+        <div id="right-knob9" class="knob9"></div>
+      </div>
+    </div>
+  </div>
+<div class="c1">
+  <img src="curly.jpg" alt="varla">
+</div>
+
+<div class="c2">
+  <img src="curly.jpg" alt="varla">
+</div>
+</body>
+</html>
